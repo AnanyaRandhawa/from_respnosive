@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("bg_color.jpg");
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin:70px;
+    background-color: white;
+    width:70%;
+    height: auto;
+    overflow: hidden;
+}
+.main_content{
+    margin:10px;
+}
+.foreground_image{
+    margin:5px;
+    height:130px;
+    background-image: url('fore_bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_image{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    margin-top: 80px;
+}
+.name_fl{
+    display:flex;
+    flex-direction: row;
+}
+.first_name, .last_name{
+    display:flex;
+    flex-direction:column;
+}
+
+.title_of_form{
+    text-align: center;
+    color:rgb(27, 204, 204);
+    margin:20px;
+    padding:30px;
+}
+span{
+    margin: 0 40px 20px;
+    width:30%;
+    padding:10px
+}
+input{
+    border:none;
+    border-bottom: 1px solid rgb(27, 204, 204) ;
+    outline:none;
+}
+.suggestion, .empID{
+    display: flex;
+}
+/* .heart, .star{
+    position:relative;
+} */
+/* .heart label, .star label{
+    position: relative;
+} */
+.rating_heart, .rating_star, .select_box, .radio_btn_box{
+    display:flex;
+    flex-direction: row;
+}
+.heart label::before{
+    content:'\1F499';
+    font-family: fontAwesome;
+    /* position:relative; */
+    font-size: 20px;
+    color:rgb(27, 204, 204);
+}
+/* .heart label::after{
+    content:'\1F499';
+    font-family: fontAwesome;
+    position:absolute;
+    font-size: 20px;
+    top:0;
+    opacity:0;
+    transition:.5s;
+    color:rgb(233, 233, 14);
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+} */
+/* .heart label:hover:after,
+.heart input:checked ~label:after{
+ opacity:1;
+} */
+.heart input, .star input{
+    display: none;
+}
+.heart, .star{
+    direction: rtl;
+}
+.star label::before{
+    content:'\2605';
+    font-size: 25px;
+    font-family: fontAwesome;
+    position:relative;
+    color:rgb(27, 204, 204);
+}
+/* .star label::after{
+    content: '\2605';
+    font-size: 25px;
+    position: absolute;
+    opacity: 0;
+    color:rgb(189, 30, 30);
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+    transition:.5s;
+}
+.star label:hover:after,
+.star input:checked~label:after{
+    opacity:1;
+} */
+.submit_btn{
+    text-align: center;
+}
+#submit_b {
+   background-color:rgb(27, 204, 204);
+   width:60px;
+   height:30px
+}
+select{
+    width:30rem;
+    border:none;
+    border-bottom:1px solid rgb(27, 204, 204);
+    color:rgb(27, 204, 204);
+    outline:none;
+}
+.radio_btn, .first_name, .last_name{
+    color:rgb(27, 204, 204);
+}
+#emp_id, #suggest{
+    width:30rem;
+}
+#first, #last{
+    width:13rem;
+    margin:0 40px 0 0;
+
+}
+.radio_btn_1, .radio_btn_2, .radio_btn_3{
+padding:3px;
+}
+.radio_btn_box{
+    display: flex;
+    flex-direction: row;
+}
+/* @media (max-width: 952px) {
+    .title_of_form, .empID{
+        font-size: 20px;
+    }
+    .name_fl, span{
+        font-size: 20px;
+    }
+    .first_name, .last_name{
+        width:100px;
+    }
+    .radio_btn{
+        width:auto;
+    }
+    select, #emp_id, #suggest{
+        width:200px;
+    }
+    #last, #first{
+        padding:4px;
+        width:90px;
+    }
+} */
+@media screen and (max-width:914px){
+  .title_of_form{
+    text-align: center;
+  }
+    .name_fl, span{
+        font-size: 20px;
+    }
+    .first_name, .last_name{
+        width:200px;
+    }
+    .radio_btn{
+        width:auto;
+    }
+    select, #emp_id, #suggest{
+        width:300px;
+    }
+    #last, #first{
+        padding:10px;
+        width:90px;
+    }
+  }
+
+  @media screen and (max-width:700px){
+    .title_of_form{
+      text-align: center;
+    }
+      .name_fl, span{
+          font-size: 12px;
+      }
+      .first_name, .last_name{
+          width:20px;
+          padding:10px;
+      }
+      .radio_btn{
+          width:auto;
+      }
+      select, #emp_id, #suggest{
+          width:80px;
+      }
+      #last, #first{
+          padding:5px;
+          width:15px;
+      }
+      input{
+        width:10px;
+      }
+      .heart_input, .star_input{
+        height:10px;
+        width:10px;
+      }
+}
+@media screen and(max-width:400px)
+{
+    .star_input, .heart_input{
+        width:20%;
+        height:2rem;
+    }
+        .radio_value{
+            font-size:xx-small;
+        }
+        .heart_input, .star_input{
+            height:5px;
+            width:5px;
+          }
+
+}
+
+  
+
+
+

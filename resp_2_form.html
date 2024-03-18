@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resp_2_form</title>
+    <link rel="stylesheet" href="resp_2_form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="main_content">
+
+            <div class="foreground_image">
+                <div class="logo_image">
+                    <img src="login.jpg" alt="Logo" width="100" height="100">
+                </div>
+            </div>
+
+            <div class="title_of_form">
+                <h1>Employee Satisfaction</h1>
+            <p>Help us to improve your experience in this company.</p>
+            </div>
+
+            <form>
+                
+                <div class="name_fl">
+                    <span>Name</span>
+                    <div class="first_name">
+                        <input type="text" name="first" id="first">
+                        <label for="first">First</label>
+                    </div>
+
+                    <div class="last_name">
+                        <input type="text" name="last" id="last">
+                        <label for="last">Last</label>
+                    </div>
+                </div>
+
+            
+                <div class="empID">
+                    <span>Employee ID</span>
+                    <div class="empID_text">
+                        <input type="text" id="emp_id">
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="rating_heart">
+                    <span>How would you rate your supervisor's attitude towards you and the rest of thre team?</span>
+
+                    <div class="heart">
+                        <input type="radio" name="rating" id="heart1" class="heart_input">
+                        <label for="heart1"></label>
+                        <input type="radio" name="rating" id="heart2" class="heart_input">
+                        <label for="heart2"></label>
+                        <input type="radio" name="rating" id="heart3" class="heart_input">
+                        <label for="heart3"></label>
+                        <input type="radio" name="rating" id="heart4" class="heart_input">
+                        <label for="heart4"></label>
+                        <input type="radio" name="rating" id="heart5" class="heart_input">
+                        <label for="heart5"></label>
+                    </div>
+                </div>
+
+                <div class="rating_star">
+                    <span>How would you rate your HR manager's attitude</span>
+
+                    <div class="star">
+                        <input type="radio" name="rating" id="star1" class="star_input">
+                        <label for="star1"></label>
+                        <input type="radio" name="rating" id="star2" class="star_input">
+                        <label for="star2"></label>
+                        <input type="radio" name="rating" id="star3" class="star_input">
+                        <label for="star3"></label>
+                        <input type="radio" name="rating" id="star4" class="star_input">
+                        <label for="star4"></label>
+                        <input type="radio" name="rating" id="star5" class="star_input">
+                        <label for="star5"></label>
+                    </div>
+                </div>
+
+            <div class="select_box">
+              <span>How satisfied are you with your team?</span>
+
+              <div class="select_option">
+                <select name="rate" id="rate">
+                    <option value="0">-Select-</option>
+                    <option value="1">Excellent</option>
+                    <option value="2">Good</option>
+                    <option value="3">Average</option>
+                    <option value="4">Bad</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="radio_btn_box">
+                <span>Are your team mates helpful to each other?</span>
+
+                <div class="radio_btn">
+                         <div class="radio_btn_1">
+                            <input type="radio" id="top" name="top" value="Yes-totally" class="radio_value">Yes-totally
+                         </div>
+                        
+                          <div class="radio_btn_2">
+                            <input type="radio" id="second" name="second" value="A bit" class="radio_value">A bit
+                          </div>
+                    
+                        <div class="radio_btn_3">
+                            <input type="radio" id="third" name="third" value="No way" class="radio_value">No way
+                        </div>
+                    
+                          
+                </div>
+            </div>
+
+        <div class="suggestion">
+            <span>Do you have anything else you'd like us to know?</span>
+            <div class="textBox_suggestion">
+                <input type="text" id="suggest" name="suggest">
+            </div>
+            
+        </div>
+
+           <div class="submit_btn">
+            <input type="submit" id="submit_b">
+           </div>
+
+            </form>
+            
+
+        </div>
+    </div>
+    
+   
+</body>
+</html>
